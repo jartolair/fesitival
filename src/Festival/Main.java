@@ -15,13 +15,13 @@ public class Main {
 		a1.setNombreGrupo("In Flames");
 		a1.setDuracion(90);
 		
-		//crear una actuacion por teclado
+		/*//crear una actuacion por teclado
 		Actuacion a2 =new Actuacion();
 		Scanner lector=new Scanner(System.in);
 		System.out.println("Introduce un nombre de grupo:");
 		a2.setNombreGrupo(lector.nextLine());
 		System.out.println("Introduce la duracion de actuacion:");
-		a2.setDuracion(Integer.parseInt(lector.nextLine()));
+		a2.setDuracion(Integer.parseInt(lector.nextLine()));*/
 		
 		//crear actuacion por fichero
 		File fichero=new File("D:/ficherosJava/actuaciones.txt");
@@ -45,7 +45,7 @@ public class Main {
 		festival.setPatrocinador("Heineken");
 		ArrayList<Actuacion> actuaciones=new ArrayList<Actuacion>();
 		actuaciones.add(a1);
-		actuaciones.add(a2);
+		//actuaciones.add(a2);
 		actuaciones.add(a3);
 		festival.setActuaciones(actuaciones);
 		
@@ -58,6 +58,14 @@ public class Main {
 		
 		festival.mostrarInfo();
 		
+		
+		Actuacion a5 =new Actuacion();
+		a5.setNombreGrupo("Rammstein");
+		a5.setDuracion(100);
+		festival.addActuacion(a5);
+
+		
+		festival.mostrarInfo();
 		
 	}
 

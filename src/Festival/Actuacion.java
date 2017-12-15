@@ -31,6 +31,7 @@ public class Actuacion {
 	}
 	
 	public String getInfo(){
+		
 		return (this.getNombreGrupo()+" : "+this.getDuracion());
 	}
 }
