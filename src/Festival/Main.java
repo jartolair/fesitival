@@ -63,6 +63,11 @@ public class Main {
 		a5.setNombreGrupo("Rammstein");
 		a5.setDuracion(100);
 		festival.addActuacion(a5);
+		
+		Actuacion a6 =new Actuacion();
+		a6.setNombreGrupo("The Offspring");
+		a6.setDuracion(100);
+		festival.addActuacion(a6);
 
 		
 		festival.mostrarInfo();
