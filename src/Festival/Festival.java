@@ -60,6 +60,7 @@ public class Festival {
 	public void mostrarInfo(){
 		System.out.println(this.getNombre());
 		System.out.println("Patrocinado por "+getPatrocinador());
+		System.out.println(this.getDuracion()+" minutos de musica!!!");
 		System.out.println("-------------------");
 		
 		Iterator<Actuacion> i =actuaciones.iterator();
@@ -88,5 +89,15 @@ public class Festival {
 				this.actuaciones.set(i, a);
 			}
 		}
+	}
+	
+	public int getDuracion(){
+		int suma=0;
+		Iterator<Actuacion> i=actuaciones.iterator();
+		while(i.hasNext()){
+			suma=(suma+i.next().getDuracion());
+		}
+		
+		return suma;
 	}
 }
