@@ -4,7 +4,14 @@ public class Actuacion {
 	private String nombreGrupo;
 	private int duracion;
 	
-	
+	public Actuacion(){
+		
+	}
+	public Actuacion(String nombreGrupo, int duracion) {
+		super();
+		this.nombreGrupo = nombreGrupo;
+		this.duracion = duracion;
+	}
 	/**
 	 * @return the nombreGrupo
 	 */

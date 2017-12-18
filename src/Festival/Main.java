@@ -14,10 +14,10 @@ public class Main {
 		Actuacion a1 =new Actuacion();
 		a1.setNombreGrupo("In Flames");
 		a1.setDuracion(90);
-		
+		Scanner lector=new Scanner(System.in);
 		/*//crear una actuacion por teclado
 		Actuacion a2 =new Actuacion();
-		Scanner lector=new Scanner(System.in);
+		
 		System.out.println("Introduce un nombre de grupo:");
 		a2.setNombreGrupo(lector.nextLine());
 		System.out.println("Introduce la duracion de actuacion:");
@@ -72,6 +72,14 @@ public class Main {
 		
 		festival.mostrarInfo();
 		
+		
+		System.out.println("Introduce el nombre de un grupo para eliminar");
+		String grupo=lector.nextLine();
+		
+		festival.eliminarActuacion(grupo);
+		festival.mostrarInfo();
+
+
 	}
 
 }
