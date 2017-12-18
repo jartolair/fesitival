@@ -56,7 +56,7 @@ public class Main {
 		
 		festival.addActuacion("Bury Tomorrow", 95);
 		
-		festival.mostrarInfo();
+		//festival.mostrarInfo();
 		
 		
 		Actuacion a5 =new Actuacion();
