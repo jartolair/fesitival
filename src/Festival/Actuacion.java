@@ -8,7 +8,7 @@ public class Actuacion {
 		
 	}
 	public Actuacion(String nombreGrupo, int duracion) {
-		super();
+		//super();
 		this.nombreGrupo = nombreGrupo;
 		this.duracion = duracion;
 	}
